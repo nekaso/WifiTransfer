@@ -17,6 +17,12 @@
 		09766659193F6146008F4F28 /* iPhoneHTTPServerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09766654193F6146008F4F28 /* iPhoneHTTPServerAppDelegate.m */; };
 		0976665E193F6159008F4F28 /* localhostAddresses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0976665B193F6159008F4F28 /* localhostAddresses.m */; };
 		0976665F193F6159008F4F28 /* MyHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0976665D193F6159008F4F28 /* MyHTTPConnection.m */; };
+		6D34DEE6198A2F81003E0B11 /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEE5198A2F81003E0B11 /* AVPlayerViewController.m */; };
+		6D34DEF2198A30C0003E0B11 /* trail.AVPTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DEF1198A30C0003E0B11 /* trail.AVPTFramework.framework */; };
+		6D34DEF5198A31DA003E0B11 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEF4198A31DA003E0B11 /* UIAlertView+Blocks.m */; };
+		6D34DEFA198A3206003E0B11 /* VideoEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEF7198A3206003E0B11 /* VideoEffectView.m */; };
+		6D34DEFB198A3206003E0B11 /* AdjustSpeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEF9198A3206003E0B11 /* AdjustSpeedView.m */; };
+		6D34DEFE198A36C9003E0B11 /* MovieInfosViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEFD198A36C9003E0B11 /* MovieInfosViewController.mm */; };
 		6D99E15918B4CB11003D187A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D99E15818B4CB11003D187A /* Foundation.framework */; };
 		6D99E15B18B4CB11003D187A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D99E15A18B4CB11003D187A /* CoreGraphics.framework */; };
 		6D99E15D18B4CB11003D187A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D99E15C18B4CB11003D187A /* UIKit.framework */; };
@@ -76,6 +82,17 @@
 		0976665B193F6159008F4F28 /* localhostAddresses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = localhostAddresses.m; path = Classes/localhostAddresses.m; sourceTree = "<group>"; };
 		0976665C193F6159008F4F28 /* MyHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyHTTPConnection.h; path = Classes/MyHTTPConnection.h; sourceTree = "<group>"; };
 		0976665D193F6159008F4F28 /* MyHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyHTTPConnection.m; path = Classes/MyHTTPConnection.m; sourceTree = "<group>"; };
+		6D34DEE4198A2F81003E0B11 /* AVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewController.h; sourceTree = "<group>"; };
+		6D34DEE5198A2F81003E0B11 /* AVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
+		6D34DEF1198A30C0003E0B11 /* trail.AVPTFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = trail.AVPTFramework.framework; sourceTree = "<group>"; };
+		6D34DEF3198A31DA003E0B11 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		6D34DEF4198A31DA003E0B11 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		6D34DEF6198A3206003E0B11 /* VideoEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEffectView.h; sourceTree = "<group>"; };
+		6D34DEF7198A3206003E0B11 /* VideoEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoEffectView.m; sourceTree = "<group>"; };
+		6D34DEF8198A3206003E0B11 /* AdjustSpeedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustSpeedView.h; sourceTree = "<group>"; };
+		6D34DEF9198A3206003E0B11 /* AdjustSpeedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustSpeedView.m; sourceTree = "<group>"; };
+		6D34DEFC198A36C9003E0B11 /* MovieInfosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieInfosViewController.h; sourceTree = "<group>"; };
+		6D34DEFD198A36C9003E0B11 /* MovieInfosViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MovieInfosViewController.mm; sourceTree = "<group>"; };
 		6D99E15518B4CB11003D187A /* TabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D99E15818B4CB11003D187A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6D99E15A18B4CB11003D187A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D99E1CC18B4F732003D187A /* MediaPlayer.framework in Frameworks */,
+				6D34DEF2198A30C0003E0B11 /* trail.AVPTFramework.framework in Frameworks */,
 				6D99E1C718B4DF0E003D187A /* SystemConfiguration.framework in Frameworks */,
 				6D99E1C518B4DF05003D187A /* CFNetwork.framework in Frameworks */,
 				6D99E15B18B4CB11003D187A /* CoreGraphics.framework in Frameworks */,
@@ -194,6 +212,7 @@
 		6D99E15718B4CB11003D187A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D34DEF1198A30C0003E0B11 /* trail.AVPTFramework.framework */,
 				6D99E1CB18B4F732003D187A /* MediaPlayer.framework */,
 				6D99E1C618B4DF0E003D187A /* SystemConfiguration.framework */,
 				6D99E1C418B4DF05003D187A /* CFNetwork.framework */,
@@ -216,6 +235,16 @@
 				6D99E16818B4CB11003D187A /* BIDAppDelegate.m */,
 				6D99E17318B4CB11003D187A /* BIDSecondViewController.h */,
 				6D99E17418B4CB11003D187A /* BIDSecondViewController.m */,
+				6D34DEE4198A2F81003E0B11 /* AVPlayerViewController.h */,
+				6D34DEE5198A2F81003E0B11 /* AVPlayerViewController.m */,
+				6D34DEF3198A31DA003E0B11 /* UIAlertView+Blocks.h */,
+				6D34DEF4198A31DA003E0B11 /* UIAlertView+Blocks.m */,
+				6D34DEF6198A3206003E0B11 /* VideoEffectView.h */,
+				6D34DEF7198A3206003E0B11 /* VideoEffectView.m */,
+				6D34DEF8198A3206003E0B11 /* AdjustSpeedView.h */,
+				6D34DEF9198A3206003E0B11 /* AdjustSpeedView.m */,
+				6D34DEFC198A36C9003E0B11 /* MovieInfosViewController.h */,
+				6D34DEFD198A36C9003E0B11 /* MovieInfosViewController.mm */,
 				6D99E15F18B4CB11003D187A /* Supporting Files */,
 			);
 			path = TabBarController;
@@ -386,18 +415,23 @@
 				6D99E16918B4CB11003D187A /* BIDAppDelegate.m in Sources */,
 				09766649193F6132008F4F28 /* DDNumber.m in Sources */,
 				09766655193F6146008F4F28 /* HTTPAuthenticationRequest.m in Sources */,
+				6D34DEFA198A3206003E0B11 /* VideoEffectView.m in Sources */,
 				09766656193F6146008F4F28 /* HTTPConnection.m in Sources */,
 				0976664A193F6132008F4F28 /* DDRange.m in Sources */,
 				6D99E1B918B4DBF5003D187A /* AsyncSocket.m in Sources */,
 				6D99E17518B4CB11003D187A /* BIDSecondViewController.m in Sources */,
 				09766658193F6146008F4F28 /* HTTPServer.m in Sources */,
 				09766657193F6146008F4F28 /* HTTPResponse.m in Sources */,
+				6D34DEFB198A3206003E0B11 /* AdjustSpeedView.m in Sources */,
 				6D99E1BB18B4DBF5003D187A /* FtpDataConnection.m in Sources */,
 				0976665F193F6159008F4F28 /* MyHTTPConnection.m in Sources */,
 				0976665E193F6159008F4F28 /* localhostAddresses.m in Sources */,
 				6D99E16518B4CB11003D187A /* main.m in Sources */,
+				6D34DEE6198A2F81003E0B11 /* AVPlayerViewController.m in Sources */,
+				6D34DEFE198A36C9003E0B11 /* MovieInfosViewController.mm in Sources */,
 				09766659193F6146008F4F28 /* iPhoneHTTPServerAppDelegate.m in Sources */,
 				6D99E1A118B4D980003D187A /* VideoListTableViewController.m in Sources */,
+				6D34DEF5198A31DA003E0B11 /* UIAlertView+Blocks.m in Sources */,
 				09766648193F6132008F4F28 /* DDData.m in Sources */,
 				6D99E1BF18B4DBF5003D187A /* list.m in Sources */,
 				6D99E1C118B4DBF5003D187A /* NetworkController.m in Sources */,
@@ -541,10 +575,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabBarController/TabBarController-Prefix.pch";
 				INFOPLIST_FILE = "TabBarController/TabBarController-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -556,10 +598,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabBarController/TabBarController-Prefix.pch";
 				INFOPLIST_FILE = "TabBarController/TabBarController-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
