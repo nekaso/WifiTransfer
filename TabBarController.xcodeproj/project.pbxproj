@@ -20,9 +20,18 @@
 		6D34DEE6198A2F81003E0B11 /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEE5198A2F81003E0B11 /* AVPlayerViewController.m */; };
 		6D34DEF2198A30C0003E0B11 /* trail.AVPTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DEF1198A30C0003E0B11 /* trail.AVPTFramework.framework */; };
 		6D34DEF5198A31DA003E0B11 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEF4198A31DA003E0B11 /* UIAlertView+Blocks.m */; };
-		6D34DEFA198A3206003E0B11 /* VideoEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEF7198A3206003E0B11 /* VideoEffectView.m */; };
-		6D34DEFB198A3206003E0B11 /* AdjustSpeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEF9198A3206003E0B11 /* AdjustSpeedView.m */; };
-		6D34DEFE198A36C9003E0B11 /* MovieInfosViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEFD198A36C9003E0B11 /* MovieInfosViewController.mm */; };
+		6D34DEFA198A3206003E0B11 /* VideoEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEF7198A3206003E0B11 /* VideoEffectView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6D34DEFB198A3206003E0B11 /* AdjustSpeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEF9198A3206003E0B11 /* AdjustSpeedView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6D34DEFE198A36C9003E0B11 /* MovieInfosViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEFD198A36C9003E0B11 /* MovieInfosViewController.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		6D34DF00198B2F1A003E0B11 /* avplayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D34DEFF198B2F1A003E0B11 /* avplayer.bundle */; };
+		6D34DF04198B3427003E0B11 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DF03198B3427003E0B11 /* AVFoundation.framework */; };
+		6D34DF06198B3436003E0B11 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DF05198B3436003E0B11 /* AudioToolbox.framework */; };
+		6D34DF08198B344E003E0B11 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DF07198B344E003E0B11 /* OpenGLES.framework */; };
+		6D34DF0A198B3471003E0B11 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DF09198B3471003E0B11 /* libiconv.dylib */; };
+		6D34DF0C198B3487003E0B11 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DF0B198B3487003E0B11 /* libz.dylib */; };
+		6D34DF0E198B3494003E0B11 /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DF0D198B3494003E0B11 /* libbz2.dylib */; };
+		6D34DF10198B34A9003E0B11 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DF0F198B34A9003E0B11 /* libstdc++.dylib */; };
+		6D34DF201992F9A6003E0B11 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DF1F1992F9A6003E0B11 /* CoreAudio.framework */; };
 		6D99E15918B4CB11003D187A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D99E15818B4CB11003D187A /* Foundation.framework */; };
 		6D99E15B18B4CB11003D187A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D99E15A18B4CB11003D187A /* CoreGraphics.framework */; };
 		6D99E15D18B4CB11003D187A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D99E15C18B4CB11003D187A /* UIKit.framework */; };
@@ -93,6 +102,15 @@
 		6D34DEF9198A3206003E0B11 /* AdjustSpeedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustSpeedView.m; sourceTree = "<group>"; };
 		6D34DEFC198A36C9003E0B11 /* MovieInfosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieInfosViewController.h; sourceTree = "<group>"; };
 		6D34DEFD198A36C9003E0B11 /* MovieInfosViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MovieInfosViewController.mm; sourceTree = "<group>"; };
+		6D34DEFF198B2F1A003E0B11 /* avplayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = avplayer.bundle; sourceTree = "<group>"; };
+		6D34DF03198B3427003E0B11 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6D34DF05198B3436003E0B11 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6D34DF07198B344E003E0B11 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		6D34DF09198B3471003E0B11 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		6D34DF0B198B3487003E0B11 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6D34DF0D198B3494003E0B11 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		6D34DF0F198B34A9003E0B11 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		6D34DF1F1992F9A6003E0B11 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		6D99E15518B4CB11003D187A /* TabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D99E15818B4CB11003D187A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6D99E15A18B4CB11003D187A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,6 +157,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D34DF201992F9A6003E0B11 /* CoreAudio.framework in Frameworks */,
+				6D34DF06198B3436003E0B11 /* AudioToolbox.framework in Frameworks */,
+				6D34DF10198B34A9003E0B11 /* libstdc++.dylib in Frameworks */,
+				6D34DF0E198B3494003E0B11 /* libbz2.dylib in Frameworks */,
+				6D34DF0C198B3487003E0B11 /* libz.dylib in Frameworks */,
+				6D34DF0A198B3471003E0B11 /* libiconv.dylib in Frameworks */,
+				6D34DF08198B344E003E0B11 /* OpenGLES.framework in Frameworks */,
+				6D34DF04198B3427003E0B11 /* AVFoundation.framework in Frameworks */,
 				6D99E1CC18B4F732003D187A /* MediaPlayer.framework in Frameworks */,
 				6D34DEF2198A30C0003E0B11 /* trail.AVPTFramework.framework in Frameworks */,
 				6D99E1C718B4DF0E003D187A /* SystemConfiguration.framework in Frameworks */,
@@ -189,6 +215,24 @@
 			name = HTTPServer;
 			sourceTree = "<group>";
 		};
+		6D34DF11198B7070003E0B11 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				6D34DEE4198A2F81003E0B11 /* AVPlayerViewController.h */,
+				6D34DEE5198A2F81003E0B11 /* AVPlayerViewController.m */,
+				6D34DEF3198A31DA003E0B11 /* UIAlertView+Blocks.h */,
+				6D34DEF4198A31DA003E0B11 /* UIAlertView+Blocks.m */,
+				6D34DEF6198A3206003E0B11 /* VideoEffectView.h */,
+				6D34DEF7198A3206003E0B11 /* VideoEffectView.m */,
+				6D34DEF8198A3206003E0B11 /* AdjustSpeedView.h */,
+				6D34DEF9198A3206003E0B11 /* AdjustSpeedView.m */,
+				6D34DEFC198A36C9003E0B11 /* MovieInfosViewController.h */,
+				6D34DEFD198A36C9003E0B11 /* MovieInfosViewController.mm */,
+				6D34DEFF198B2F1A003E0B11 /* avplayer.bundle */,
+			);
+			name = VideoPlayer;
+			sourceTree = "<group>";
+		};
 		6D99E14C18B4CB11003D187A = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +256,14 @@
 		6D99E15718B4CB11003D187A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D34DF1F1992F9A6003E0B11 /* CoreAudio.framework */,
+				6D34DF0F198B34A9003E0B11 /* libstdc++.dylib */,
+				6D34DF0D198B3494003E0B11 /* libbz2.dylib */,
+				6D34DF0B198B3487003E0B11 /* libz.dylib */,
+				6D34DF09198B3471003E0B11 /* libiconv.dylib */,
+				6D34DF07198B344E003E0B11 /* OpenGLES.framework */,
+				6D34DF05198B3436003E0B11 /* AudioToolbox.framework */,
+				6D34DF03198B3427003E0B11 /* AVFoundation.framework */,
 				6D34DEF1198A30C0003E0B11 /* trail.AVPTFramework.framework */,
 				6D99E1CB18B4F732003D187A /* MediaPlayer.framework */,
 				6D99E1C618B4DF0E003D187A /* SystemConfiguration.framework */,
@@ -227,24 +279,15 @@
 		6D99E15E18B4CB11003D187A /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
+				6D34DF11198B7070003E0B11 /* VideoPlayer */,
 				09766641193F6086008F4F28 /* HTTPServer */,
 				6D99E1A218B4DBF5003D187A /* FTP Server */,
-				6D99E19F18B4D980003D187A /* VideoListTableViewController.h */,
-				6D99E1A018B4D980003D187A /* VideoListTableViewController.m */,
 				6D99E16718B4CB11003D187A /* BIDAppDelegate.h */,
 				6D99E16818B4CB11003D187A /* BIDAppDelegate.m */,
+				6D99E19F18B4D980003D187A /* VideoListTableViewController.h */,
+				6D99E1A018B4D980003D187A /* VideoListTableViewController.m */,
 				6D99E17318B4CB11003D187A /* BIDSecondViewController.h */,
 				6D99E17418B4CB11003D187A /* BIDSecondViewController.m */,
-				6D34DEE4198A2F81003E0B11 /* AVPlayerViewController.h */,
-				6D34DEE5198A2F81003E0B11 /* AVPlayerViewController.m */,
-				6D34DEF3198A31DA003E0B11 /* UIAlertView+Blocks.h */,
-				6D34DEF4198A31DA003E0B11 /* UIAlertView+Blocks.m */,
-				6D34DEF6198A3206003E0B11 /* VideoEffectView.h */,
-				6D34DEF7198A3206003E0B11 /* VideoEffectView.m */,
-				6D34DEF8198A3206003E0B11 /* AdjustSpeedView.h */,
-				6D34DEF9198A3206003E0B11 /* AdjustSpeedView.m */,
-				6D34DEFC198A36C9003E0B11 /* MovieInfosViewController.h */,
-				6D34DEFD198A36C9003E0B11 /* MovieInfosViewController.mm */,
 				6D99E15F18B4CB11003D187A /* Supporting Files */,
 			);
 			path = TabBarController;
@@ -356,7 +399,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BID;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = xc;
 				TargetAttributes = {
 					6D99E17B18B4CB11003D187A = {
@@ -391,6 +434,7 @@
 				6D99E1CA18B4E256003D187A /* ftp_commands.plist in Resources */,
 				6D99E16F18B4CB11003D187A /* Main_iPad.storyboard in Resources */,
 				6D99E17718B4CB11003D187A /* Images.xcassets in Resources */,
+				6D34DF00198B2F1A003E0B11 /* avplayer.bundle in Resources */,
 				6D99E16C18B4CB11003D187A /* Main_iPhone.storyboard in Resources */,
 				6D99E16318B4CB11003D187A /* InfoPlist.strings in Resources */,
 			);
@@ -499,7 +543,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -539,7 +582,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -575,6 +617,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -582,7 +625,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabBarController/TabBarController-Prefix.pch";
 				INFOPLIST_FILE = "TabBarController/TabBarController-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -605,7 +648,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabBarController/TabBarController-Prefix.pch";
 				INFOPLIST_FILE = "TabBarController/TabBarController-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -618,7 +661,6 @@
 		6D99E19118B4CB11003D187A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TabBarController.app/TabBarController";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -641,7 +683,6 @@
 		6D99E19218B4CB11003D187A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TabBarController.app/TabBarController";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

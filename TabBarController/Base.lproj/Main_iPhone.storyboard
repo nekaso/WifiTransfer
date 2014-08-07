@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
@@ -28,8 +28,8 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="Tow-UO-42b" id="aac-HR-SXg"/>
-                            <outlet property="delegate" destination="Tow-UO-42b" id="4we-Gc-KWc"/>
+                            <outlet property="dataSource" destination="Tow-UO-42b" id="D1Y-re-nQf"/>
+                            <outlet property="delegate" destination="Tow-UO-42b" id="cer-OZ-PGI"/>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Video" image="video" id="66x-gS-Meo"/>
@@ -51,13 +51,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Note:" translatesAutoresizingMaskIntoConstraints="NO" id="flv-SR-WFF">
-                                <rect key="frame" x="0.0" y="357" width="320" height="166"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ftp://192.168.1.1:21" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIJ-Hf-ndI">
                                 <rect key="frame" x="27" y="55" width="273" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -76,15 +69,14 @@
                                     <action selector="ToggleServer:" destination="QUy-BD-bpt" eventType="touchUpInside" id="cpv-7x-GrM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Connect with FTP:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ap-jl-qd9">
-                                <rect key="frame" x="27" y="9" width="174" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connect with Browser:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNZ-ae-jLe">
                                 <rect key="frame" x="27" y="118" width="188" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connect with FTP:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYh-sY-gJk">
+                                <rect key="frame" x="27" y="26" width="188" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -97,13 +89,9 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="i8K-8t-YVu" firstAttribute="top" secondItem="1Ap-jl-qd9" secondAttribute="bottom" constant="461" id="Wxg-J3-lf2"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Server" image="second" id="Z7h-1E-pvt"/>
                     <connections>
-                        <outlet property="ServerInfoView" destination="flv-SR-WFF" id="qHn-16-Drt"/>
                         <outlet property="ServerTitleLabel" destination="sIJ-Hf-ndI" id="m0c-Iq-3Rs"/>
                         <outlet property="btnControlServer" destination="TSQ-PU-ZGm" id="R1z-3g-QVZ"/>
                         <outlet property="httpURL" destination="FdE-eU-iha" id="Ja3-00-7YW"/>
@@ -149,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKB-1S-U2s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1181" y="-142"/>
+            <point key="canvasLocation" x="1209" y="190"/>
         </scene>
         <!--Movie Infos View Controller - Movie Infos-->
         <scene sceneID="luh-lo-C8m">
@@ -215,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8P3-fS-o9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1200" y="-843"/>
+            <point key="canvasLocation" x="1200" y="-511"/>
         </scene>
     </scenes>
     <resources>
