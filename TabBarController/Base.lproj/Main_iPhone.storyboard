@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
@@ -14,18 +14,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ehV-89-Jjd">
+                            <tableViewCell contentMode="left" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ehV-89-Jjd">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ehV-89-Jjd" id="cIJ-cF-THJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="253" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="5Q7-c3-64E" kind="modal" identifier="showMoviePlayer" id="qMI-n4-acZ"/>
+                                    <segue destination="eXr-p6-VKa" kind="push" identifier="showMovieInfos" trigger="accessoryAction" id="MLi-EY-h7I"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="Tow-UO-42b" id="aac-HR-SXg"/>
-                            <outlet property="delegate" destination="Tow-UO-42b" id="4we-Gc-KWc"/>
+                            <outlet property="dataSource" destination="Tow-UO-42b" id="D1Y-re-nQf"/>
+                            <outlet property="delegate" destination="Tow-UO-42b" id="cer-OZ-PGI"/>
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Video" image="video" id="66x-gS-Meo"/>
@@ -96,7 +100,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Server" image="second" id="Z7h-1E-pvt"/>
                     <connections>
-                        <outlet property="ServerInfoView" destination="flv-SR-WFF" id="qHn-16-Drt"/>
                         <outlet property="ServerTitleLabel" destination="sIJ-Hf-ndI" id="m0c-Iq-3Rs"/>
                         <outlet property="btnControlServer" destination="TSQ-PU-ZGm" id="R1z-3g-QVZ"/>
                         <outlet property="ftpLabel" destination="sC1-oW-7BX" id="xuE-F4-T7H"/>
@@ -126,6 +129,91 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="180"/>
+        </scene>
+        <!--Player View Controller - Media Player-->
+        <scene sceneID="3Cy-QX-1Kt">
+            <objects>
+                <viewController id="5Q7-c3-64E" customClass="AVPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FEQ-rD-NXJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="yWr-B6-d1i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rca-sM-TVA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Media Player" id="BgL-LK-e0d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jKB-1S-U2s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1209" y="190"/>
+        </scene>
+        <!--Movie Infos View Controller - Movie Infos-->
+        <scene sceneID="luh-lo-C8m">
+            <objects>
+                <viewController id="eXr-p6-VKa" customClass="MovieInfosViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6mX-4C-FGK"/>
+                        <viewControllerLayoutGuide type="bottom" id="ME9-4W-Iic"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mgl-DS-Y9q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Duration:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxm-fv-oQp">
+                                <rect key="frame" x="22" y="84" width="124" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Video Size:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fk2-e7-LP2">
+                                <rect key="frame" x="22" y="126" width="124" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="01:20:10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZO7-A4-iTm">
+                                <rect key="frame" x="153" y="84" width="162" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="640*720" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHb-CA-Vvn">
+                                <rect key="frame" x="153" y="126" width="132" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bE0-aW-fQR">
+                                <rect key="frame" x="0.0" y="214" width="320" height="354"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Video Thumbnail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HP7-MT-TxF">
+                                <rect key="frame" x="20" y="182" width="276" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Movie Infos" id="7ku-NN-8mj"/>
+                    <connections>
+                        <outlet property="durationLabel" destination="ZO7-A4-iTm" id="Wll-Ot-43l"/>
+                        <outlet property="thumbnailsImageView" destination="bE0-aW-fQR" id="fIA-04-uOb"/>
+                        <outlet property="videoSizeLabel" destination="xHb-CA-Vvn" id="uQr-vt-Ro4"/>
+                        <outlet property="view" destination="mgl-DS-Y9q" id="5vC-f9-Ydt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8P3-fS-o9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1200" y="-511"/>
         </scene>
     </scenes>
     <resources>

@@ -7,7 +7,7 @@
 //
 
 #import "VideoListTableViewController.h"
-
+#import "AVPlayerViewController.h"
 @interface VideoListTableViewController ()
 @end
 
@@ -23,19 +23,10 @@
     return self;
 }
 
-- (void)viewDidLoad
+-(void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidLoad];
-
-    if(self.FileList == nil)
-    {
-        self.FileList = [self GetAllFiles];
-    }
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.FileList = [self GetAllFiles];
+    [self loadView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -78,20 +69,16 @@
     NSArray *documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString* documentDir = [documentPaths objectAtIndex:0];
     NSString* fullname = [documentDir stringByAppendingFormat:@"/%@",filename];
-    NSURL *url=[[NSURL alloc] initFileURLWithPath:fullname];
     
-    MPMoviePlayerViewController*tmpMoviePlayViewController=[[MPMoviePlayerViewController alloc] initWithContentURL:url];
+    AVPlayerViewController*tmpMoviePlayViewController=[[AVPlayerViewController alloc] init];
+    tmpMoviePlayViewController.mediaPath = fullname;
     if(tmpMoviePlayViewController)
     {
-        self.moviePlayViewController=tmpMoviePlayViewController;
-        
-        [self presentMoviePlayerViewControllerAnimated:self.moviePlayViewController];
-        self.moviePlayViewController.moviePlayer.movieSourceType = MPMovieSourceTypeFile;
-        [self.moviePlayViewController.moviePlayer play];
+        [self presentViewController:tmpMoviePlayViewController animated:true completion:nil];
     }
     [tmpMoviePlayViewController release];
-    //[[NSNotificationCenterdefaultCenter] addObserver:selfselector:@selector(playbackDidFinish) name:MPMoviePlayerPlaybackDidFinishNotificationobject:nil];
 }
+
 
 - (NSArray*) GetAllFiles
 {

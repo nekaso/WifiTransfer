@@ -19,12 +19,14 @@
 @end
 
 @implementation BIDSecondViewController
-@synthesize theServer, baseDir,ServerInfoView, ServerTitleLabel,btnControlServer,isServerRunning;
+@synthesize theServer, theHTTPServer, baseDir,ServerInfoView, ServerTitleLabel,btnControlServer,isServerRunning;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self startServer];
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,18 +35,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-// ----------------------------------------------------------------------------------------------------------
-- (void)viewDidAppear:(BOOL) animated  {
-    // ----------------------------------------------------------------------------------------------------------
-    
-	[super viewDidAppear:animated];
-	
-    [self startServer];
-}
-
 - (void) startServer
 {
-    ///	NSString *localIPAddress = [ NetworkController localIPAddress ];
 	NSString *localIPAddress = [ NetworkController localWifiIPAddress ];
     
 	NSArray *docFolders = NSSearchPathForDirectoriesInDomains (NSDocumentDirectory, NSUserDomainMask, YES );
@@ -68,12 +60,12 @@
     }
 
     self.ServerTitleLabel.text = [NSString stringWithFormat:@"%@ %@ %@",
-                                  @"ftp:\\\\",localIPAddress, @":20000"];
+                                  @"ftp://",localIPAddress, @": 20000"];
 
     UInt16 theHTTPServerPort = [theHTTPServer port];
 
     self.httpURL.text =[NSString stringWithFormat:@"%@ %@ %@ %d",
-        @"http:\\\\",localIPAddress, @":", theHTTPServerPort];
+        @"http://",localIPAddress, @":", theHTTPServerPort];
     
     self.ServerInfoView.text = @"The FTP/HTTP Server have been enabled, please use FTP client software or Web Browser to transfer any files to this device.\nPress the \"Stop Server\" button once all data transfers have been completed.";
 
@@ -144,7 +136,7 @@
 	}
 	
 	NSString *info;
-	UInt16 port = [theHTTPServer port];
+	//UInt16 port = [theHTTPServer port];
 	
 	NSString *localIP = nil;
 	

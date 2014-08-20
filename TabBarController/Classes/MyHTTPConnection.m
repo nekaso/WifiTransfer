@@ -31,9 +31,9 @@
     NSArray *array = [[NSFileManager defaultManager] directoryContentsAtPath:path];
     
     NSMutableString *outdata = [NSMutableString new];
-	[outdata appendString:@"<html><head>"];
+	[outdata appendString:@"<html><head><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\"/>"];
 	[outdata appendFormat:@"<title>Files from %@</title>", server.name];
-    [outdata appendString:@"<style>html {background-color:#eeeeee} body { background-color:#FFFFFF; font-family:Tahoma,Arial,Helvetica,sans-serif; font-size:18x; margin-left:15%; margin-right:15%; border:3px groove #006600; padding:15px; } </style>"];
+    [outdata appendString:@"<style>html {background-color:#eeeeee} body { background-color:#FFFFFF; font-family:Tahoma,Arial,Helvetica,sans-serif; font-size:18x; margin-left:15%; margin-right:15%; border:3px groove #006600; padding:15px;} </style>"];
     [outdata appendString:@"</head><body>"];
 	[outdata appendFormat:@"<h1>Files from %@</h1>", server.name];
     [outdata appendString:@"<bq>The following files are hosted live from the iPhone's Docs folder.</bq>"];
