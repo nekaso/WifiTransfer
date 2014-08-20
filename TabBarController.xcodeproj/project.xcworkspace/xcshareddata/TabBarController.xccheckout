@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>68BCD23E-9038-4012-AFDB-EAACE726DB66</string>
+	<string>D06A270E-2353-4B41-AAC7-810C853EBB1E</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TabBarController</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9D9FCE2C-510C-462A-B754-7D7EA1E846C5</key>
-		<string>https://github.com/LyleXu/TabBarController.git</string>
+		<key>5F5BCA9E-8ED4-491F-B47E-6D4BC584113C</key>
+		<string>https://github.com/nekaso/WifiTransfer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TabBarController.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9D9FCE2C-510C-462A-B754-7D7EA1E846C5</key>
+		<key>5F5BCA9E-8ED4-491F-B47E-6D4BC584113C</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/LyleXu/TabBarController.git</string>
+	<string>https://github.com/nekaso/WifiTransfer.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9D9FCE2C-510C-462A-B754-7D7EA1E846C5</string>
+	<string>5F5BCA9E-8ED4-491F-B47E-6D4BC584113C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9D9FCE2C-510C-462A-B754-7D7EA1E846C5</string>
+			<string>5F5BCA9E-8ED4-491F-B47E-6D4BC584113C</string>
 			<key>IDESourceControlWCCName</key>
-			<string>TabBarController</string>
+			<string>WifiTransfer</string>
 		</dict>
 	</array>
 </dict>

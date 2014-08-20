@@ -23,11 +23,13 @@
 @property (nonatomic, copy) NSString *baseDir;
 @property (retain, nonatomic) IBOutlet UITextView *ServerInfoView;
 @property (retain, nonatomic) IBOutlet UILabel *ServerTitleLabel;
+@property (retain, nonatomic) IBOutlet UILabel *ftpLabel;
 @property (retain, nonatomic) IBOutlet UIButton *btnControlServer;
 
 @property (nonatomic, retain) HTTPServer *theHTTPServer;
 
 @property (retain, nonatomic) IBOutlet UIButton *btnControlHTTPServer;
+@property (retain, nonatomic) IBOutlet UILabel *httpLabel;
 
 @property (retain, nonatomic) IBOutlet UILabel *httpURL;
 

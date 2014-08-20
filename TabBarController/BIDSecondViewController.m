@@ -53,7 +53,7 @@
 	
 	FtpServer *aServer = [[ FtpServer alloc ] initWithPort:20000 withDir:baseDir notifyObject:self ];
 	self.theServer = aServer;
-    [aServer release];
+    //[aServer release];
     
     
     theHTTPServer = [HTTPServer new];
@@ -75,14 +75,21 @@
     self.httpURL.text =[NSString stringWithFormat:@"%@ %@ %@ %d",
         @"http:\\\\",localIPAddress, @":", theHTTPServerPort];
     
-    self.ServerInfoView.text = @"The FTP Server has been enabled, please use FTP client software to transfer any import/export data to or from this device.\nPress the \"Stop Server\" button once all data transfers have been completed.";
-    //self.ServerInfoView.hidden = false;
+    self.ServerInfoView.text = @"The FTP/HTTP Server have been enabled, please use FTP client software or Web Browser to transfer any files to this device.\nPress the \"Stop Server\" button once all data transfers have been completed.";
 
 	self.theServer = aServer;
-    [aServer release];
+    //[aServer release];
 
     self.isServerRunning = TRUE;
     [self.btnControlServer setTitle:@"Stop Server" forState:UIControlStateNormal] ;
+    
+    self.ServerTitleLabel.hidden = false;
+    self.ServerInfoView.hidden = false;
+    
+    self.httpLabel.hidden = false;
+    self.httpURL.hidden = false;
+    self.ftpLabel.hidden = false;
+
 }
 
 - (void) startHTTPServer
@@ -172,6 +179,18 @@
     [self.btnControlServer setTitle:@"Start Server" forState:UIControlStateNormal] ;
     self.ServerTitleLabel.hidden = true;
     self.ServerInfoView.hidden = true;
+    self.ftpLabel.hidden = true;
+    
+    self.httpLabel.hidden = true;
+    self.httpURL.hidden = true;
+
+    
+    if(theHTTPServer)
+    {
+        [theHTTPServer stop];
+        [theHTTPServer release];
+		theHTTPServer=nil;
+    }
     
 	if(theServer)
 	{
@@ -183,7 +202,7 @@
 
 - (void)stopHTTPServer {
     // ----------------------------------------------------------------------------------------------------------
-	NSLog(@"Stopping the FTP server");
+	/*NSLog(@"Stopping the FTP server");
     
     self.isServerRunning = FALSE;
     [self.btnControlHTTPServer setTitle:@"Start HTTP Server" forState:UIControlStateNormal] ;
@@ -196,6 +215,7 @@
         [theServer release];
 		theServer=nil;
 	}
+     */
 }
 
 -(void)didReceiveFileListChanged
@@ -210,6 +230,7 @@
     [self.btnControlServer release];
     [_btnControlHTTPServer release];
     [_httpURL release];
+    [_ftpLabel release];
     [super dealloc];
 }
 - (IBAction)ToggleServer:(id)sender {
