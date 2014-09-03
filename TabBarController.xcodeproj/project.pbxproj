@@ -20,9 +20,7 @@
 		6D34DEE6198A2F81003E0B11 /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEE5198A2F81003E0B11 /* AVPlayerViewController.m */; };
 		6D34DEF2198A30C0003E0B11 /* trail.AVPTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DEF1198A30C0003E0B11 /* trail.AVPTFramework.framework */; };
 		6D34DEF5198A31DA003E0B11 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEF4198A31DA003E0B11 /* UIAlertView+Blocks.m */; };
-		6D34DEFA198A3206003E0B11 /* VideoEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEF7198A3206003E0B11 /* VideoEffectView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6D34DEFB198A3206003E0B11 /* AdjustSpeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEF9198A3206003E0B11 /* AdjustSpeedView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		6D34DEFE198A36C9003E0B11 /* MovieInfosViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEFD198A36C9003E0B11 /* MovieInfosViewController.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6D34DF00198B2F1A003E0B11 /* avplayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D34DEFF198B2F1A003E0B11 /* avplayer.bundle */; };
 		6D34DF04198B3427003E0B11 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DF03198B3427003E0B11 /* AVFoundation.framework */; };
 		6D34DF06198B3436003E0B11 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DF05198B3436003E0B11 /* AudioToolbox.framework */; };
@@ -96,12 +94,8 @@
 		6D34DEF1198A30C0003E0B11 /* trail.AVPTFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = trail.AVPTFramework.framework; sourceTree = "<group>"; };
 		6D34DEF3198A31DA003E0B11 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 		6D34DEF4198A31DA003E0B11 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
-		6D34DEF6198A3206003E0B11 /* VideoEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEffectView.h; sourceTree = "<group>"; };
-		6D34DEF7198A3206003E0B11 /* VideoEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoEffectView.m; sourceTree = "<group>"; };
 		6D34DEF8198A3206003E0B11 /* AdjustSpeedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustSpeedView.h; sourceTree = "<group>"; };
 		6D34DEF9198A3206003E0B11 /* AdjustSpeedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustSpeedView.m; sourceTree = "<group>"; };
-		6D34DEFC198A36C9003E0B11 /* MovieInfosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieInfosViewController.h; sourceTree = "<group>"; };
-		6D34DEFD198A36C9003E0B11 /* MovieInfosViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MovieInfosViewController.mm; sourceTree = "<group>"; };
 		6D34DEFF198B2F1A003E0B11 /* avplayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = avplayer.bundle; sourceTree = "<group>"; };
 		6D34DF03198B3427003E0B11 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6D34DF05198B3436003E0B11 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -222,12 +216,8 @@
 				6D34DEE5198A2F81003E0B11 /* AVPlayerViewController.m */,
 				6D34DEF3198A31DA003E0B11 /* UIAlertView+Blocks.h */,
 				6D34DEF4198A31DA003E0B11 /* UIAlertView+Blocks.m */,
-				6D34DEF6198A3206003E0B11 /* VideoEffectView.h */,
-				6D34DEF7198A3206003E0B11 /* VideoEffectView.m */,
 				6D34DEF8198A3206003E0B11 /* AdjustSpeedView.h */,
 				6D34DEF9198A3206003E0B11 /* AdjustSpeedView.m */,
-				6D34DEFC198A36C9003E0B11 /* MovieInfosViewController.h */,
-				6D34DEFD198A36C9003E0B11 /* MovieInfosViewController.mm */,
 				6D34DEFF198B2F1A003E0B11 /* avplayer.bundle */,
 			);
 			name = VideoPlayer;
@@ -459,7 +449,6 @@
 				6D99E16918B4CB11003D187A /* BIDAppDelegate.m in Sources */,
 				09766649193F6132008F4F28 /* DDNumber.m in Sources */,
 				09766655193F6146008F4F28 /* HTTPAuthenticationRequest.m in Sources */,
-				6D34DEFA198A3206003E0B11 /* VideoEffectView.m in Sources */,
 				09766656193F6146008F4F28 /* HTTPConnection.m in Sources */,
 				0976664A193F6132008F4F28 /* DDRange.m in Sources */,
 				6D99E1B918B4DBF5003D187A /* AsyncSocket.m in Sources */,
@@ -472,7 +461,6 @@
 				0976665E193F6159008F4F28 /* localhostAddresses.m in Sources */,
 				6D99E16518B4CB11003D187A /* main.m in Sources */,
 				6D34DEE6198A2F81003E0B11 /* AVPlayerViewController.m in Sources */,
-				6D34DEFE198A36C9003E0B11 /* MovieInfosViewController.mm in Sources */,
 				09766659193F6146008F4F28 /* iPhoneHTTPServerAppDelegate.m in Sources */,
 				6D99E1A118B4D980003D187A /* VideoListTableViewController.m in Sources */,
 				6D34DEF5198A31DA003E0B11 /* UIAlertView+Blocks.m in Sources */,
