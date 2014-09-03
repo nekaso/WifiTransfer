@@ -33,31 +33,35 @@
     NSMutableString *outdata = [NSMutableString new];
 	[outdata appendString:@"<html><head><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\"/>"];
 	[outdata appendFormat:@"<title>Files from %@</title>", server.name];
-    [outdata appendString:@"<style>html {background-color:#eeeeee} body { background-color:#FFFFFF; font-family:Tahoma,Arial,Helvetica,sans-serif; font-size:18x; margin-left:15%; margin-right:15%; border:3px groove #006600; padding:15px;} </style>"];
+    [outdata appendString:@"<style>html {background-color:#F5F5DC} body { background-color:#F5F5DC; font-family:Tahoma,Arial,Helvetica,sans-serif; font-size:18x; margin-left:15%; margin-right:15%; border:3px groove #006600; padding:15px;} </style>"];
     [outdata appendString:@"</head><body>"];
-	[outdata appendFormat:@"<h1>Files from %@</h1>", server.name];
-    [outdata appendString:@"<bq>The following files are hosted live from the iPhone's Docs folder.</bq>"];
+	[outdata appendFormat:@"<h1>Files Uploader %@</h1>", server.name];
+    [outdata appendString:@"<bq>The following files are located on GTCC Player.</bq>"];
     [outdata appendString:@"<p>"];
-	[outdata appendFormat:@"<a href=\"..\">..</a><br />\n"];
+    [outdata appendString:@"<table><tr><td bgcolor=#87CEEB>"];
+	//[outdata appendFormat:@"<a href=\"..\">..</a><br />\n"];
     for (NSString *fname in array)
     {
         NSDictionary *fileDict = [[NSFileManager defaultManager] fileAttributesAtPath:[path stringByAppendingPathComponent:fname] traverseLink:NO];
 		//NSLog(@"fileDict: %@", fileDict);
         NSString *modDate = [[fileDict objectForKey:NSFileModificationDate] description];
 		if ([[fileDict objectForKey:NSFileType] isEqualToString: @"NSFileTypeDirectory"]) fname = [fname stringByAppendingString:@"/"];
-		[outdata appendFormat:@"<a href=\"%@\">%@</a>		(%8.1f Kb, %@)<br />\n", fname, fname, [[fileDict objectForKey:NSFileSize] floatValue] / 1024, modDate];
+		[outdata appendFormat:@"<a href=\"%@\">%@</a>		(%8.1f Kb)<br />\n", fname, fname, [[fileDict objectForKey:NSFileSize] floatValue] / 1024];
     }
+    [outdata appendString:@"</td></tr></table>"];
     [outdata appendString:@"</p>"];
 	
 	if ([self supportsPOST:path withSize:0])
 	{
 		[outdata appendString:@"<form action=\"\" method=\"post\" enctype=\"multipart/form-data\" name=\"form1\" id=\"form1\">"];
-		[outdata appendString:@"<label>upload file"];
+        [outdata appendString:@"<table><tr><td bgcolor=#87CEEB>"];
+		[outdata appendString:@"<label>Upload file: "];
 		[outdata appendString:@"<input type=\"file\" name=\"file\" id=\"file\" />"];
 		[outdata appendString:@"</label>"];
 		[outdata appendString:@"<label>"];
 		[outdata appendString:@"<input type=\"submit\" name=\"button\" id=\"button\" value=\"Submit\" />"];
 		[outdata appendString:@"</label>"];
+        [outdata appendString:@"</td></tr></table>"];
 		[outdata appendString:@"</form>"];
 	}
 	

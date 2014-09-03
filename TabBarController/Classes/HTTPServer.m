@@ -23,7 +23,7 @@
 		
 		// Use a default port of 0
 		// This will allow the kernel to automatically pick an open port for us
-		port = 0;
+		port = 8083;
 		
 		// Bonjour domain. Use the local domain by default
 		domain = @"local.";
