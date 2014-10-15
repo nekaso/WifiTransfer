@@ -10,7 +10,7 @@
 #import <MediaPlayer/MPMoviePlayerViewController.h>
 #import <MediaPlayer/MPMoviePlayerController.h>
 @interface VideoListTableViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate>
-@property (nonatomic, copy) NSArray* FileList;
+@property (nonatomic, retain) NSMutableArray* FileList;
 @property (nonatomic,retain) UIViewController* moviePlayViewController;
 @property (nonatomic,retain) MPMoviePlayerController* moviePlayerController;
 @end

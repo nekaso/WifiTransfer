@@ -18,7 +18,6 @@
 		0976665E193F6159008F4F28 /* localhostAddresses.m in Sources */ = {isa = PBXBuildFile; fileRef = 0976665B193F6159008F4F28 /* localhostAddresses.m */; };
 		0976665F193F6159008F4F28 /* MyHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0976665D193F6159008F4F28 /* MyHTTPConnection.m */; };
 		6D34DEE6198A2F81003E0B11 /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEE5198A2F81003E0B11 /* AVPlayerViewController.m */; };
-		6D34DEF2198A30C0003E0B11 /* trail.AVPTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DEF1198A30C0003E0B11 /* trail.AVPTFramework.framework */; };
 		6D34DEF5198A31DA003E0B11 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEF4198A31DA003E0B11 /* UIAlertView+Blocks.m */; };
 		6D34DEFB198A3206003E0B11 /* AdjustSpeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D34DEF9198A3206003E0B11 /* AdjustSpeedView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		6D34DF00198B2F1A003E0B11 /* avplayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D34DEFF198B2F1A003E0B11 /* avplayer.bundle */; };
@@ -30,6 +29,7 @@
 		6D34DF0E198B3494003E0B11 /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DF0D198B3494003E0B11 /* libbz2.dylib */; };
 		6D34DF10198B34A9003E0B11 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DF0F198B34A9003E0B11 /* libstdc++.dylib */; };
 		6D34DF201992F9A6003E0B11 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D34DF1F1992F9A6003E0B11 /* CoreAudio.framework */; };
+		6D44903019D3F5E000413AB2 /* trail.AVPTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D44902F19D3F5E000413AB2 /* trail.AVPTFramework.framework */; };
 		6D99E15918B4CB11003D187A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D99E15818B4CB11003D187A /* Foundation.framework */; };
 		6D99E15B18B4CB11003D187A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D99E15A18B4CB11003D187A /* CoreGraphics.framework */; };
 		6D99E15D18B4CB11003D187A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D99E15C18B4CB11003D187A /* UIKit.framework */; };
@@ -91,7 +91,6 @@
 		0976665D193F6159008F4F28 /* MyHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyHTTPConnection.m; path = Classes/MyHTTPConnection.m; sourceTree = "<group>"; };
 		6D34DEE4198A2F81003E0B11 /* AVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewController.h; sourceTree = "<group>"; };
 		6D34DEE5198A2F81003E0B11 /* AVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
-		6D34DEF1198A30C0003E0B11 /* trail.AVPTFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = trail.AVPTFramework.framework; sourceTree = "<group>"; };
 		6D34DEF3198A31DA003E0B11 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 		6D34DEF4198A31DA003E0B11 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		6D34DEF8198A3206003E0B11 /* AdjustSpeedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustSpeedView.h; sourceTree = "<group>"; };
@@ -105,6 +104,7 @@
 		6D34DF0D198B3494003E0B11 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
 		6D34DF0F198B34A9003E0B11 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		6D34DF1F1992F9A6003E0B11 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		6D44902F19D3F5E000413AB2 /* trail.AVPTFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = trail.AVPTFramework.framework; sourceTree = "<group>"; };
 		6D99E15518B4CB11003D187A /* TabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D99E15818B4CB11003D187A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6D99E15A18B4CB11003D187A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -151,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D44903019D3F5E000413AB2 /* trail.AVPTFramework.framework in Frameworks */,
 				6D34DF201992F9A6003E0B11 /* CoreAudio.framework in Frameworks */,
 				6D34DF06198B3436003E0B11 /* AudioToolbox.framework in Frameworks */,
 				6D34DF10198B34A9003E0B11 /* libstdc++.dylib in Frameworks */,
@@ -160,7 +161,6 @@
 				6D34DF08198B344E003E0B11 /* OpenGLES.framework in Frameworks */,
 				6D34DF04198B3427003E0B11 /* AVFoundation.framework in Frameworks */,
 				6D99E1CC18B4F732003D187A /* MediaPlayer.framework in Frameworks */,
-				6D34DEF2198A30C0003E0B11 /* trail.AVPTFramework.framework in Frameworks */,
 				6D99E1C718B4DF0E003D187A /* SystemConfiguration.framework in Frameworks */,
 				6D99E1C518B4DF05003D187A /* CFNetwork.framework in Frameworks */,
 				6D99E15B18B4CB11003D187A /* CoreGraphics.framework in Frameworks */,
@@ -246,6 +246,7 @@
 		6D99E15718B4CB11003D187A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D44902F19D3F5E000413AB2 /* trail.AVPTFramework.framework */,
 				6D34DF1F1992F9A6003E0B11 /* CoreAudio.framework */,
 				6D34DF0F198B34A9003E0B11 /* libstdc++.dylib */,
 				6D34DF0D198B3494003E0B11 /* libbz2.dylib */,
@@ -254,7 +255,6 @@
 				6D34DF07198B344E003E0B11 /* OpenGLES.framework */,
 				6D34DF05198B3436003E0B11 /* AudioToolbox.framework */,
 				6D34DF03198B3427003E0B11 /* AVFoundation.framework */,
-				6D34DEF1198A30C0003E0B11 /* trail.AVPTFramework.framework */,
 				6D99E1CB18B4F732003D187A /* MediaPlayer.framework */,
 				6D99E1C618B4DF0E003D187A /* SystemConfiguration.framework */,
 				6D99E1C418B4DF05003D187A /* CFNetwork.framework */,

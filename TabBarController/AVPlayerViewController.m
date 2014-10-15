@@ -53,9 +53,11 @@
     _prevStatusBarHidden = [UIApplication sharedApplication].statusBarHidden;
     _prevStatusBarStyle = [UIApplication sharedApplication].statusBarStyle;
     
-    if (![self respondsToSelector:@selector(edgesForExtendedLayout)]) {
-        self.wantsFullScreenLayout = YES;
-    }
+    
+    //if (![self respondsToSelector:@selector(edgesForExtendedLayout)])
+    //{
+    //        self.wantsFullScreenLayout = YES;
+    //}
     
     // Other initalization
     _hudVisible = YES;
